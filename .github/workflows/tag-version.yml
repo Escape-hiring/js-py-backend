@@ -25,7 +25,7 @@ jobs:
       - name: Extract VERSION
         id: extract_version
         run: |
-          VERSION=$(cat version.txt)
+          VERSION=$(cat VERSION.txt)
           echo "VERSION=$VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
