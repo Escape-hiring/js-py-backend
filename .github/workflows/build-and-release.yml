@@ -36,7 +36,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           UPLOAD_URL: ${{ env.UPLOAD_URL }}
         run: |
-          $FILENAME=repo.tar.gz
+          $FILENAME='repo.tar.gz'
           tar -czvf $FILENAME .
           FILENAME=$(basename $FILE)
           curl -s -X POST \
